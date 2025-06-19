@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,10 +13,12 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <head>
+</head>
     </head>
     <body>
         <!-- Inicio Header -->
-         <!-- Cambio de aceite-->
+                 <!-- Cambio de aceite-->
         <section class="container my-4">
             <h1 class="text-center my-5">Autofix - Reparación de Vehículos a Domicilio</h1>
             <h2 class="text-left my-4">Servicios y Precios</h2>
@@ -55,14 +58,60 @@
                     </div>
                 </div>
             </div>
-    </section>
-
-
         <!-- Fin Header -->
         <!-- Inicio Form1 -->
+        <div class="container">
+            <h2 class="my-3">Solicitar Reparación</h2>
+            <div class="form-group my-2">
+                <label for="nombreCliente">Nombre del Cliente</label>
+                <input type="text" class="form-control form-control-lg my-2">
+            </div>
+            <div class="form-group">
+                <label for="seleccionReparación">Tipo de Reparacion</label>
+                <select class="form-control p-2 my-2" id="exampleFormControlSelect1">
+                    <option>-- Selecciona un Servicio --</option>
+                    <option>Cambio de Aceite</option>
+                    <option>Revisión de Frenos</option>
+                    <option>Diagnóstico eléctrico</option>
+                </select>
+            </div>
+            <div class="form-group my-2 my-2">
+                <label for="selectorAsientos">Descripción</label>
+                <textarea class="form-control my-2" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <div>   
+                <label for="fechaHora" class="form-label">Agendar Cita</label>
+                <input type="datetime-local" class="form-control" id="fechaHora" name="fechaHora" >
+            </div>
         <!-- Fin Form1 -->
+        <hr>
         <!-- Inicio Form2 -->
+          <main class="container my-5">
+        <section id="register" class="register-section">
+            <h2 class="mb-4">Registro de usuario</h2>
+            <form id="register-form">
+               <div class="mb-3">
+                             <label for="cardName1" class="form-label">Nombre del Titular</label>
+                             <input type="text" class="form-control" id="cardName1" required>
+                            </div>
+                         <div class="mb-3">
+                            <label for="creditCard1" class="form-label">Número de tarjeta</label>
+                             <input type="text" class="form-control" id="creditCard1" maxlength="19" minlength="16">
+                            </div>
+                             <div class="mb-3">
+                             <label for="cardName1" class="form-label">Nombre del Titular</label>
+                             <input type="text" class="form-control" id="cardName1" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="cardCvv1" class="form-label">CVV</label>
+                            <input type="password" class="form-control" id="cardCvv1" maxlength="3" required>
+                            </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </section>
+    </main>
         <!-- Fin Form2 -->        
         
+        </div>
     </body>
 </html>
